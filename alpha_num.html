@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="text" required id="demo" placeholder="Enter the value" />
+        <input type="button" onclick="alphanumeric(an)" value="verify" />
+        <script>
+            var an=document.getElementById("demo");
+            function alphanumeric(an)
+            {
+                var letterNumber = /^[0-9a-zA-Z]+$/;
+                if(an.value.match(letterNumber)) 
+                {
+                    alert("Alpha numeric");
+                }
+                else
+                { 
+                    alert("Not Alpha numeric");  
+                }
+            }
+        </script>
+    </body>
+</html>
